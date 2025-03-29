@@ -15,7 +15,6 @@
     "vitest": "^3.0.9"
   },
   "scripts": {
-    "serve": "npx http-server . -o ./examples/",
     "prepack": "npm run build",
     "build": "tsc && rollup -c",
     "lint": "eslint src",
