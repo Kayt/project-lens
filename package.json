@@ -1,0 +1,12 @@
+{
+  "name": "lens",
+  "version": "1.0.0",
+  "description": "My very own frontend framework",
+  "private": "true",
+  "author": "Achim Munene",
+  "workspaces" : [
+    "packages/runtime",
+    "packages/compiler",
+    "packages/loader"
+  ]
+}
