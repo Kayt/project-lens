@@ -1,5 +1,5 @@
 {
-  "name": "lens",
+  "name": "lens-runtime",
   "version": "1.0.0",
   "main": "dist/lens.ts",
   "files": [
