@@ -1,0 +1,26 @@
+{
+  "name": "lens-loader",
+  "version": "1.0.0",
+  "main": "dist/lens.ts",
+  "files": [
+    "dist/lens.ts"
+  ],
+  "devDependencies": {
+    "eslint": "^9.23.0",
+    "jsdom": "^26.0.0",
+    "rollup": "^4.38.0",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-file": "^0.1.1",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
+  },
+  "scripts": {
+    "serve": "npx http-server . -o ./examples/",
+    "prepack": "npm run build",
+    "build": "tsc && rollup -c",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "test": "vitest",
+    "test:run": "vitest run"
+  }
+}
