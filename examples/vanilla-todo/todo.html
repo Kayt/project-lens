@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Todo</title>
+     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script type="module" src="todo.js"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+        }
+        .new-todo {
+            padding: 10px;
+        }
+        *:disabled {
+            background-color: dimgray;
+            opacity: 1;;
+        }
+        button:enabled {
+            background-color: greenyellow;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">My Todos</h1>
+
+    <div align="center">
+        <label for="todo-input">New Todo</label>
+        <div class="new-todo">
+            <input position="absolute" type="text" id="todo-input" />
+            <button id="add-todo-btn" disabled>Add</button>
+        </div>
+
+        <ul  id="todos-list"></ul>
+    </div>
+
+</body>
+</html>
